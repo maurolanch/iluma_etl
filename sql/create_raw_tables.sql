@@ -20,5 +20,6 @@ CREATE TABLE raw.jobs_raw (
     salary_hour_avg DOUBLE PRECISION,
     company_name TEXT,
     job_skills TEXT,
-    job_type_skills TEXT
+    job_type_skills TEXT,
+    ingestion_date TIMESTAMP
 );

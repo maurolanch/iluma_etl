@@ -1,0 +1,11 @@
+
+ STARTING ETL PIPELINE
+
+📦 Creating tables...
+✅ Tables created successfully
+Loading CSV...
+  chunk 1 — 50,000 filas  chunk 2 — 100,000 filas  chunk 3 — 150,000 filas  chunk 4 — 200,000 filas  chunk 5 — 250,000 filas  chunk 6 — 300,000 filas  chunk 7 — 350,000 filas  chunk 8 — 400,000 filas  chunk 9 — 450,000 filas  chunk 10 — 500,000 filas  chunk 11 — 550,000 filas  chunk 12 — 600,000 filas  chunk 13 — 650,000 filas  chunk 14 — 700,000 filas  chunk 15 — 750,000 filas  chunk 16 — 785,741 filas
+⬆️ Listo — 785,741 filas en raw.jobs_raw
+
+✅ PIPELINE FINISHED SUCCESSFULLY
+

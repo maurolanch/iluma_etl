@@ -9,10 +9,6 @@ __pycache__/
 data/
 *.csv
 
-# IDE
-.vscode/
-.idea/
-
 # OS files
 .DS_Store
 
