@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: int_companies_deduped
+    columns:
+      - name: company_name_clean
+        tests: [unique, not_null]
+
+  - name: int_locations_deduped
+    columns:
+      - name: job_location
+        tests: [unique, not_null]
+
+  - name: int_job_type_skills
+    columns:
+      - name: skill
+        tests: [not_null]
+      - name: skill_category
+        tests: [not_null]
+      - name: raw_id
+        tests: [not_null]

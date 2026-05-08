@@ -1,0 +1,26 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: raw
+    tables:
+      - name: jobs_raw
+        columns:
+          - name: id
+            tests: [unique, not_null]
+
+models:
+  - name: stg_jobs
+    columns:
+      - name: raw_id
+        tests: [unique, not_null]
+      - name: job_title
+        tests: [not_null]
+      - name: job_title_short
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['Data Analyst', 'Data Engineer', 'Data Scientist',
+                       'Business Analyst', 'Software Engineer', 'Senior Data Engineer',
+                       'Senior Data Scientist', 'Senior Data Analyst',
+                       'Machine Learning Engineer', 'Cloud Engineer']

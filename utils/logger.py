@@ -6,7 +6,7 @@ def get_logger(name: str) -> logging.Logger:
     logger = logging.getLogger(name)
 
     if logger.handlers:
-        return logger  # evita duplicar handlers si se llama varias veces
+        return logger  # Avoids duplicating handlers if called multiple times
 
     logger.setLevel(logging.DEBUG)
 

@@ -1,4 +1,4 @@
-from sqlalchemy import create_engine, text
+from sqlalchemy import text
 
 def create_tables(engine, sql_path):
 

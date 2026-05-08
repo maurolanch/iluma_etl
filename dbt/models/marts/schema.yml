@@ -1,0 +1,71 @@
+version: 2
+
+models:
+  - name: dim_companies
+    columns:
+      - name: company_id
+        tests: [unique, not_null]
+      - name: company_name
+        tests: [not_null]
+
+  - name: dim_locations
+    columns:
+      - name: location_id
+        tests: [unique, not_null]
+      - name: job_location
+        tests: [not_null]
+
+  - name: dim_skills
+    columns:
+      - name: skill_id
+        tests: [unique, not_null]
+      - name: skill
+        tests: [not_null]
+      - name: skill_category
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['programming', 'analyst_tools', 'cloud', 'libraries',
+                       'other', 'databases', 'os', 'webframeworks', 'async', 'sync']
+
+  - name: dim_job_types
+    columns:
+      - name: job_type_id
+        tests: [unique, not_null]
+
+  - name: fact_jobs
+    columns:
+      - name: job_id
+        tests: [unique, not_null]
+      - name: raw_id
+        tests: [not_null]
+      - name: company_id
+        tests:
+          - relationships:
+              to: ref('dim_companies')
+              field: company_id
+      - name: location_id
+        tests:
+          - relationships:
+              to: ref('dim_locations')
+              field: location_id
+      - name: job_type_id
+        tests:
+          - relationships:
+              to: ref('dim_job_types')
+              field: job_type_id
+
+  - name: bridge_job_skills
+    columns:
+      - name: job_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('fact_jobs')
+              field: job_id
+      - name: skill_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_skills')
+              field: skill_id
