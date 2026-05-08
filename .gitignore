@@ -14,3 +14,7 @@ data/
 
 #ENV Files
 .env
+
+#Logs
+/logs
+*.log

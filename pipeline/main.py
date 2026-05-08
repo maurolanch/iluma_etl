@@ -1,10 +1,10 @@
 from sqlalchemy import create_engine
 
-from config import DB_URL
+from pipeline.config import DB_URL
 from db.create_tables import create_tables
-from src.ingest_jobs import ingest_raw
+from ingestion.ingest_jobs import ingest_raw
 
-from src.logger import get_logger
+from utils.logger import get_logger
 
 logger = get_logger(__name__)
 
