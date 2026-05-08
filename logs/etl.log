@@ -9,3 +9,64 @@ Loading CSV...
 
 ✅ PIPELINE FINISHED SUCCESSFULLY
 
+2026-05-08 08:27:41 | DEBUG    | src.ingest_jobs | chunk 1 — 50,000 rows inserted
+2026-05-08 08:27:47 | DEBUG    | src.ingest_jobs | chunk 2 — 100,000 rows inserted
+2026-05-08 08:27:53 | DEBUG    | src.ingest_jobs | chunk 3 — 150,000 rows inserted
+2026-05-08 08:28:00 | DEBUG    | src.ingest_jobs | chunk 4 — 200,000 rows inserted
+2026-05-08 08:28:06 | DEBUG    | src.ingest_jobs | chunk 5 — 250,000 rows inserted
+2026-05-08 08:28:13 | DEBUG    | src.ingest_jobs | chunk 6 — 300,000 rows inserted
+2026-05-08 08:28:19 | DEBUG    | src.ingest_jobs | chunk 7 — 350,000 rows inserted
+2026-05-08 08:28:25 | DEBUG    | src.ingest_jobs | chunk 8 — 400,000 rows inserted
+2026-05-08 08:28:31 | DEBUG    | src.ingest_jobs | chunk 9 — 450,000 rows inserted
+2026-05-08 08:28:37 | DEBUG    | src.ingest_jobs | chunk 10 — 500,000 rows inserted
+2026-05-08 08:28:43 | DEBUG    | src.ingest_jobs | chunk 11 — 550,000 rows inserted
+2026-05-08 08:28:48 | DEBUG    | src.ingest_jobs | chunk 12 — 600,000 rows inserted
+2026-05-08 08:28:54 | DEBUG    | src.ingest_jobs | chunk 13 — 650,000 rows inserted
+2026-05-08 08:29:03 | DEBUG    | src.ingest_jobs | chunk 14 — 700,000 rows inserted
+2026-05-08 08:29:10 | DEBUG    | src.ingest_jobs | chunk 15 — 750,000 rows inserted
+2026-05-08 08:29:15 | DEBUG    | src.ingest_jobs | chunk 16 — 785,741 rows inserted
+2026-05-08 08:29:15 | INFO     | src.ingest_jobs | Raw ingestion complete → 785,741 rows in 18099s
+2026-05-08 08:32:13 | INFO     | __main__ | Starting ETL pipeline
+2026-05-08 08:32:14 | INFO     | __main__ | Creating tables...
+2026-05-08 08:32:14 | INFO     | __main__ | Tables created successfully
+2026-05-08 08:32:14 | INFO     | __main__ | Loading CSV into raw layer...
+2026-05-08 08:32:20 | DEBUG    | src.ingest_jobs | chunk 1 — 50,000 rows inserted
+2026-05-08 08:32:26 | DEBUG    | src.ingest_jobs | chunk 2 — 100,000 rows inserted
+2026-05-08 08:32:32 | DEBUG    | src.ingest_jobs | chunk 3 — 150,000 rows inserted
+2026-05-08 08:32:38 | DEBUG    | src.ingest_jobs | chunk 4 — 200,000 rows inserted
+2026-05-08 08:32:43 | DEBUG    | src.ingest_jobs | chunk 5 — 250,000 rows inserted
+2026-05-08 08:32:49 | DEBUG    | src.ingest_jobs | chunk 6 — 300,000 rows inserted
+2026-05-08 08:32:55 | DEBUG    | src.ingest_jobs | chunk 7 — 350,000 rows inserted
+2026-05-08 08:33:02 | DEBUG    | src.ingest_jobs | chunk 8 — 400,000 rows inserted
+2026-05-08 08:33:07 | DEBUG    | src.ingest_jobs | chunk 9 — 450,000 rows inserted
+2026-05-08 08:33:14 | DEBUG    | src.ingest_jobs | chunk 10 — 500,000 rows inserted
+2026-05-08 08:33:21 | DEBUG    | src.ingest_jobs | chunk 11 — 550,000 rows inserted
+2026-05-08 08:33:29 | DEBUG    | src.ingest_jobs | chunk 12 — 600,000 rows inserted
+2026-05-08 08:33:35 | DEBUG    | src.ingest_jobs | chunk 13 — 650,000 rows inserted
+2026-05-08 08:33:41 | DEBUG    | src.ingest_jobs | chunk 14 — 700,000 rows inserted
+2026-05-08 08:33:47 | DEBUG    | src.ingest_jobs | chunk 15 — 750,000 rows inserted
+2026-05-08 08:33:52 | DEBUG    | src.ingest_jobs | chunk 16 — 785,741 rows inserted
+2026-05-08 08:33:52 | INFO     | src.ingest_jobs | Raw ingestion complete → 785,741 rows in 18097s
+2026-05-08 08:33:52 | INFO     | __main__ | ETL pipeline finished successfully
+2026-05-08 08:35:10 | INFO     | __main__ | Starting ETL pipeline
+2026-05-08 08:35:10 | INFO     | __main__ | Creating tables...
+2026-05-08 08:35:10 | INFO     | __main__ | Tables created successfully
+2026-05-08 08:35:10 | INFO     | __main__ | Loading CSV into raw layer...
+2026-05-08 08:35:17 | DEBUG    | src.ingest_jobs | chunk 1 — 50,000 rows inserted
+2026-05-08 08:35:22 | DEBUG    | src.ingest_jobs | chunk 2 — 100,000 rows inserted
+2026-05-08 08:35:29 | DEBUG    | src.ingest_jobs | chunk 3 — 150,000 rows inserted
+2026-05-08 08:35:35 | DEBUG    | src.ingest_jobs | chunk 4 — 200,000 rows inserted
+2026-05-08 08:35:41 | DEBUG    | src.ingest_jobs | chunk 5 — 250,000 rows inserted
+2026-05-08 08:35:48 | DEBUG    | src.ingest_jobs | chunk 6 — 300,000 rows inserted
+2026-05-08 08:35:55 | DEBUG    | src.ingest_jobs | chunk 7 — 350,000 rows inserted
+2026-05-08 08:36:03 | DEBUG    | src.ingest_jobs | chunk 8 — 400,000 rows inserted
+2026-05-08 08:36:10 | DEBUG    | src.ingest_jobs | chunk 9 — 450,000 rows inserted
+2026-05-08 08:36:16 | DEBUG    | src.ingest_jobs | chunk 10 — 500,000 rows inserted
+2026-05-08 08:36:22 | DEBUG    | src.ingest_jobs | chunk 11 — 550,000 rows inserted
+2026-05-08 08:36:29 | DEBUG    | src.ingest_jobs | chunk 12 — 600,000 rows inserted
+2026-05-08 08:36:35 | DEBUG    | src.ingest_jobs | chunk 13 — 650,000 rows inserted
+2026-05-08 08:36:42 | DEBUG    | src.ingest_jobs | chunk 14 — 700,000 rows inserted
+2026-05-08 08:36:48 | DEBUG    | src.ingest_jobs | chunk 15 — 750,000 rows inserted
+2026-05-08 08:36:52 | DEBUG    | src.ingest_jobs | chunk 16 — 785,741 rows inserted
+2026-05-08 08:36:52 | INFO     | src.ingest_jobs | Raw ingestion complete → 785,741 rows in 101s
+2026-05-08 08:36:52 | INFO     | __main__ | ETL pipeline finished successfully
