@@ -183,6 +183,9 @@ Tests were defined at every layer to catch issues as early as possible:
 
 ```
 etl_iluma/
+├── .github/
+│   └── workflows/
+│       └── ci.yml              # GitHub Actions CI pipeline
 ├── data/                   # source CSV (gitignored)
 ├── db/
 │   └── create_tables.py    # DDL execution
