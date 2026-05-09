@@ -4,9 +4,7 @@ import ast
 # CSV Path
 CSV_PATH = "data/data_jobs.csv"
 
-# =========================
-# LOAD DATA
-# =========================
+# load data
 
 print("\nLoading CSV...\n")
 
@@ -14,61 +12,39 @@ df = pd.read_csv(CSV_PATH)
 
 print("CSV loaded successfully.")
 
-# =========================
-# BASIC INFO
-# =========================
+# basic info
 
-print("\n==============================")
-print("DATAFRAME SHAPE")
-print("==============================")
+print("\nDataframe shape")
 print(df.shape)
 
-print("\n==============================")
-print("COLUMN NAMES")
-print("==============================")
+print("\nColumn names")
 print(df.columns.tolist())
 
-print("\n==============================")
-print("DATA TYPES")
-print("==============================")
+print("\nData types")
 print(df.dtypes)
 
-print("\n==============================")
-print("DATAFRAME INFO")
-print("==============================")
+print("\nDataframe info")
 print(df.info())
 
-# =========================
-# NULL ANALYSIS
-# =========================
+# null analysis
 
-print("\n==============================")
-print("NULL VALUES")
-print("==============================")
+print("\nNull values")
 
 nulls = df.isnull().sum().sort_values(ascending=False)
 
 print(nulls)
 
-# =========================
-# DUPLICATES
-# =========================
+# duplicates
 
-print("\n==============================")
-print("DUPLICATE ROWS")
-print("==============================")
+print("\nDuplicate rows")
 
 duplicates = df.duplicated().sum()
 
 print(f"Duplicate rows: {duplicates}")
 
-# =========================
-# UNIQUE COUNTS
-# =========================
+# unique counts
 
-print("\n==============================")
-print("UNIQUE VALUE COUNTS")
-print("==============================")
+print("\nUnique value counts")
 
 columns_to_check = [
     "job_title_short",
@@ -80,13 +56,9 @@ columns_to_check = [
 for col in columns_to_check:
     print(f"\n{col}: {df[col].nunique()} unique values")
 
-# =========================
-# DATE VALIDATION
-# =========================
+# date validation
 
-print("\n==============================")
-print("DATE VALIDATION")
-print("==============================")
+print("\nDate validation")
 
 parsed_dates = pd.to_datetime(
     df["job_posted_date"],
@@ -97,13 +69,9 @@ invalid_dates = parsed_dates.isna().sum()
 
 print(f"Invalid dates: {invalid_dates}")
 
-# =========================
-# SKILLS PARSING VALIDATION
-# =========================
+# skills parsing validation
 
-print("\n==============================")
-print("JOB_SKILLS VALIDATION")
-print("==============================")
+print("\nJob skills validation")
 
 invalid_job_skills = 0
 
@@ -120,13 +88,9 @@ for idx, value in df["job_skills"].dropna().items():
 
 print(f"Invalid job_skills rows: {invalid_job_skills}")
 
-# =========================
-# JOB TYPE SKILLS VALIDATION
-# =========================
+# job type skills validation
 
-print("\n==============================")
-print("JOB_TYPE_SKILLS VALIDATION")
-print("==============================")
+print("\nJob type skills validation")
 
 invalid_job_type_skills = 0
 
@@ -143,45 +107,29 @@ for idx, value in df["job_type_skills"].dropna().items():
 
 print(f"Invalid job_type_skills rows: {invalid_job_type_skills}")
 
-# =========================
-# SAMPLE DATA
-# =========================
+# sample data
 
-print("\n==============================")
-print("SAMPLE ROWS")
-print("==============================")
+print("\nSample rows")
 
 print(df.head())
 
-# =========================
-# TOP COUNTRIES
-# =========================
+# top countries
 
-print("\n==============================")
-print("TOP COUNTRIES")
-print("==============================")
+print("\nTop countries")
 
 print(df["job_country"].value_counts().head(10))
 
 
-# REMOTE JOBS
-
-
-print("\n==============================")
-print("REMOTE JOBS")
-print("==============================")
+# remote jobs
+print("\nRemote jobs")
 
 remote_jobs = df["job_work_from_home"].value_counts()
 
 print(remote_jobs)
 
-# =========================
-# SALARY ANALYSIS
-# =========================
+# salary analysis
 
-print("\n==============================")
-print("SALARY NULL ANALYSIS")
-print("==============================")
+print("\nSalary null analysis")
 
 salary_cols = [
     "salary_year_avg",

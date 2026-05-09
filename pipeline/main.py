@@ -1,7 +1,7 @@
 import subprocess
 from sqlalchemy import create_engine
 
-from config import DB_URL
+from pipeline.config import DB_URL
 from db.create_tables import create_tables
 from ingestion.ingest_jobs import ingest_raw
 from utils.logger import get_logger
